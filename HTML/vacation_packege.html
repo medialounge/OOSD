@@ -1,0 +1,97 @@
+<!-- By Pavandeep Jaswal -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Vacation Packeges</title>
+		<style>
+			button
+			{
+				background-color:#D9FFF2;
+				border-radius:5px;
+				width:600px;
+				position:relative;
+			}
+			
+		#nav {
+			width: 100%;
+			float: left;
+			margin: 0 0 3em 0;
+			padding: 0;
+			list-style: none;
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #ccc; 
+			border-top: 1px solid #ccc; }
+		#nav li {
+			float: left; }
+		#nav li a {
+			display: block;
+			padding: 8px 15px;
+			text-decoration: none;
+			font-weight: bold;
+			color: #069;
+			border-right: 1px solid #ccc; }
+		#nav li a:hover {
+			color: #c00;
+			background-color: #fff; }
+
+		</style>
+		</head>
+	
+	<body>
+
+		<div id="nav">
+			<ul id="nav">
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Vacation Packages</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+
+		</div>
+	
+	<form id="Asian Expedition" method="post" action="bouncer.php">
+			<input type="hidden" name="pkgid" value="3" />
+			<input type="hidden" name="pkgname" value="Asian Expedition" />
+			<input type="hidden" name="pkgcost" value="2800.00" />
+			<button onclick="document.forms['Asian Expedition'].submit()">
+				<h1>Asian Expedition</h1>
+				<h2>Airfaire, Hotel and Eco Tour.</h2>
+				<h3>$2800.00</h3>
+			</button>
+		</form>
+		
+		<form id="Caribbean New Year" method="post" action="bouncer.php">
+			<input type="hidden" name="pkgid" value="1" />
+			<input type="hidden" name="pkgname" value="Caribbean New Year" />
+			<input type="hidden" name="pkgcost" value="4800.00" />
+			<button onclick="document.forms['Caribbean New Year'].submit()">
+				<h1>Caribbean New Year</h1>
+				<h2>Cruise the Caribbean and Celebrate the New Year.</h2>
+				<h3>$4800.00</h3>
+			</button>
+		</form>
+		
+		<form id="European Vacation" method="post" action="bouncer.php">
+			<input type="hidden" name="pkgid" value="4" />
+			<input type="hidden" name="pkgname" value="European Vacation" />
+			<input type="hidden" name="pkgcost" value="3000.00" />
+			<button onclick="document.forms['European Vacation'].submit()">
+				<h1>European Vacation</h1>
+				<h2>Euro Tour with Rail Pass and Travel Insurance.</h2>
+				<h3>$3000.00</h3>
+			</button>
+		</form>
+		
+		<form id="Polynesian Paradise" method="post" action="bouncer.php">
+			<input type="hidden" name="pkgid" value="2" />
+			<input type="hidden" name="pkgname" value="Polynesian Paradise" />
+			<input type="hidden" name="pkgcost" value="3000.00" />
+			<button onclick="document.forms['Polynesian Paradise'].submit()">
+				<h1>Polynesian Paradise</h1>
+				<h2>8 Day All Inclusive Hawaiian Vacation.</h2>
+				<h3>$3000.00</h3>
+			</button>
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+	<title>Travel Experts</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="/scripts/scripts.js"></script>
+	<script type="text/javascript">
+	var myName ='';
+	</script>
+</head>
+<body onload="myName = prompt('enter your name',''); alert(myName);" >
+<div id="page-wrap" class="container">
+	<header>
+		<h1>Travel<span>Experts</span></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h3>Register</h3>
+	<script>
+		while(num < 100)
+		{
+			num++;
+			document.write("_")
+		};
+	</script>
+	<form method="post" action="/bouncer.php">
+		<fieldset>
+			<h4>Register Here!</h4>
+			<input type="text" name="fname" id="fname" placeholder="First Name..." />
+			<input type="text" name="lname" id="lname" placeholder="Last Name..." />
+			<input type="email" name="email" id="email" placeholder="Email..." />
+			<input type="text" name="phone" id="phone" placeholder="Phone#..." />
+			<input type="text" name="address" id="adderess" placeholder="Address" />
+			<input type="text" name="city" id="city" placeholder="City" />
+			<label for="province">Province:</label>
+			<select name="province">
+			<option value="BC">British Columbia</option>
+			<option value="AB">Alberta</option>
+			<option value="SK">Saskatchewan</option>
+			</select>
+			<label for="country">Country:</label>
+			<select name="country">
+			<option value="CA">Canada</option>
+			<option value="US">USA</option>
+			</select>
+			<textarea id="comments" name="comments" placeholder="Comments..." /></textarea>
+			<input type="submit" name="submit" value="register" c onClick="return confirm('Are you sure?');"/>
+			<input type="reset" name="reset" value="reset" id="reset" onClick="return confirm('Are you sure?');" />
+		</fieldset>
+	</form>
+<footer>
+	<p><small>copyright&copy; 2012 TravelExperts</small></p>
+</footer>
+</div>
+
+</body>
+</html>
